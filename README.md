@@ -2,18 +2,8 @@
 <h1 align="center"></h1>
 
 <p align="center">
-  <img src="logo.png" height="100%">
+  <img src="logo.png" height="50%">
 </p>
-
-<p align="center" margin="20px">
-  <a>
-    <img src="https://img.shields.io/badge/contributor-my%20grandma-green?style=for-the-badge" /></>
-  <a>
-    <img src="https://img.shields.io/badge/approved%20by-Arya%20Stark-red?style=for-the-badge" /></a>
-  <a>
-    <img src="https://img.shields.io/badge/powered%20by-lack%20of%20sleep-orange?style=for-the-badge" /></a>
-</p>
-
 
 ## Description
 
