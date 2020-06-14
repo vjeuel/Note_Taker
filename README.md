@@ -2,7 +2,7 @@
 <h1 align="center"></h1>
 
 <p align="center">
-  <img src="logo.png" height="50%">
+  <img src="logo.png" width="3%">
 </p>
 
 ## Description
