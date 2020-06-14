@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dk: #011126;
+  --p1: #1747A6;
+  --p2: #1C618C;
+  --s1: #BF0000;
+  --wt: #DCE6F2;
+  --wt_r: rgba(220,230,242,0.75);
+}
+
+html {
+  font-size: 10px;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 10rem;
+  color: var(--dk);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Petrona', serif;
+  font-size: 5rem;  
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: center;
+  color: var(--p2);
+}
+
+h3 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4rem;  
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: center;
+  color: var(--wt);
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: #f2f2f2;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+li {
+  font-family: 'Petrona', serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: var(--p1);
+  border-bottom: 2px dotted var(--s1);
+  margin: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+/* INDEX - PAGE */
+#index-body {
+  background-image: url(../img/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#index-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  align-content: center;
+}
+
+#index-logo-box {
+  background-color: rgba(242, 242, 242, 0.6);
+  width: 75%;
+  margin: 0 auto;
+  color: #f2f2f2;
+  box-shadow: 0 0 15px var(--dk);
+  border-radius: 2.5rem;
+  margin-top: 5%;
+  padding: 5rem;
+}
+
+#note-taker {
+  border-bottom: var(--s1) dotted 4px;
+  padding: 1rem;
+}
+
+#express {
+  margin-top: 2rem;
+}
+
+#btn {
+  font-family: 'Petrona', serif;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-decoration: none;
+  background-color: #31403E;
+  color: var(--wt);  
+  width: 50%;
+  padding: 2rem;
+  margin-top: 5rem;
+  box-shadow: -5px -5px 10px var(--wt), 5px 5px 10px var(--dk);
+  border-radius: 2.5rem;
+}
+
+#btn:hover {
+  background-color: var(--s1);
+  transition: ease-in-out 0.5s;
+}
+
+/* NOTES - PAGE */
+span {
+  margin-right: 2rem;
+}
+
+#notes-body {
+  background-image: linear-gradient(to top, var(--dk) 0%, var(--p1) 100%);
+}
+
+nav {
+  background-image: linear-gradient(to top, var(--dk) 0%, var(--p1) 100%);
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  box-shadow: 0 0 20px 5px #1D2625;
+  align-items: center;
+}
+
+#notes-logo {
+  justify-self: self-start;
+}
+
+#icons {
+  justify-self: flex-end;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#notes-container {
+  background-image: url(../img/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-gap: 2rem;
+}
+
+.list-container {
+  background-color: var(--wt_r);
+  border-radius: 2.5rem;
+  box-shadow: 0 0  15px var(--dk);
+}
+
+.list-group {
+  cursor: pointer;
+}
+
+#notes-form {
+  background-color: var(--wt_r);
+  border-radius: 2.5rem;
+  box-shadow: 0 0 15px var(--dk);
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: 'Petrona', serif;
+  color: var(--p1);
+}
+
+input::placeholder {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.note-title, .note-textarea {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  background: transparent;
+  color: var(--p1);
+  width: 100%;
+  border: none;
+  padding: 2rem;
+}
+
+.note-title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3rem;
+}
+
+.note-textarea {
+  height: 80%;
+  font-family: 'Petrona', serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.delete-note {
+  color: var(--s1);
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 3rem;
+    word-spacing: none;
+    letter-spacing: 1px;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #icons .fas {
+    height: 1rem;
+  }
+
+  #notes-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  }
+
+  .list-container {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .notes-form {
+    grid-row-start: 1;
+    grid-row-start: 2;
+  }
+
+  .note-title {
+    font-size: 2rem;
+  }
+
+  .note-textarea {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* ORIGINAL */
+.save-note {
+  display: none;
+}
+
+
+/* FONTS */
+/* 
+font-family: 'Kaushan Script', cursive;
+font-family: 'Petrona', serif;
+*/
+
+/* COLORS */
+/* Color Theme Swatches in Hex */
+.Illustrations { color: #73360F; }
+.Illustrations { color: #1747A6; }
+.Illustrations { color: #011126; }
+.Illustrations { color: #1C618C; }
+.Illustrations { color: #DCE6F2; }
+
+/* Color Theme Swatches in RGBA */
+.Illustrations { color: rgba(213, 41, 216, 1); }
+.Illustrations { color: rgba(23, 70, 165, 1); }
+.Illustrations { color: rgba(0, 17, 38, 1); }
+.Illustrations { color: rgba(28, 97, 140, 1); }
+.Illustrations { color: rgba(220,230,242,0.5); }

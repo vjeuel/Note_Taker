@@ -1,9 +1,3 @@
-// Connections
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
-const notesTaken = require("./db/db.json"); 
-
 var $noteTitle = $(".note-title");
 var $noteText = $(".note-textarea");
 var $saveNoteBtn = $(".save-note");
@@ -121,7 +115,7 @@ var renderNoteList = function(notes) {
     var $li = $("<li class='list-group-item'>").data(note);
     var $span = $("<span>").text(note.title);
     var $delBtn = $(
-      "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
+      "<i class='fas fa-trash-alt delete-note'>"
     );
 
     $li.append($span, $delBtn);
