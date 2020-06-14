@@ -5,6 +5,8 @@
   <img src="logo.png" width="40%">
 </p>
 
+You can access the app [here](https://rocky-coast-91872.herokuapp.com/)
+
 ## Description
 
 You can type a title and the note that you would like to keep as a reminder and save it, and since this is done in a server side it will save accross platforms, where you can open at any time in a phone, tablet or computer and your notes will be there saved waiting for you.
