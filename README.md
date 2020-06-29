@@ -17,4 +17,4 @@ mit
 ## **Contact**<br>
 vjeuel@gmail.com<br>
 
-<img src="https://avatars2.githubusercontent.com/u/26153956?v=4" class="profile" align="left" height="120" style="radius:50%" />
+<img src="https://avatars2.githubusercontent.com/u/26153956?v=4" class="profile" align="left" height="120" style="radius:50%"/>
